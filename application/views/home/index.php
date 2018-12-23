@@ -34,28 +34,28 @@
                             <ul>
                                 <li><a  href="#">Machinery</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/4">Tea Machinery</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/5">Conveyors</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/6">Dust Collector</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/7">Exhaust Fan</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/8">Packers</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/9">Filters</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/4">Tea Machinery</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/5">Conveyors</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/6">Dust Collector</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/7">Exhaust Fan</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/8">Packers</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/9">Filters</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Construction</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/10">Equipment</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/11">Roofing Sheets</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/12">Gates</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/13">Roller Doors</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/14">Hand Railing</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/15">Building</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/10">Equipment</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/11">Roofing Sheets</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/12">Gates</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/13">Roller Doors</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/14">Hand Railing</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/15">Building</a></li>
                                     </ul>
                                 </li>
                                 <li ><a href="#">Other</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/16">Land</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/17">Vehicles</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/other/category/16">Land</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/other/category/17">Vehicles</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo base_url(); ?>index.php/all">All Products</a></li>
@@ -126,12 +126,12 @@
                             <p>Sodales cursus sapien erat pharetra justo vitae volutpat eros magna et magna praesent at lectus vestibulum ante ipsum primis.</p>
                         </div>
                         <footer class="card-footer">
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/4"><i class="fa fa-arrow-right"></i> Tea Machinery</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/5"><i class="fa fa-arrow-right"></i> Conveyors</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/6"><i class="fa fa-arrow-right"></i> Dust Collector</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/7"><i class="fa fa-arrow-right"></i> Exhaust Fan</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/8"><i class="fa fa-arrow-right"></i> Packers</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/9"><i class="fa fa-arrow-right"></i> Filters</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/category/4"><i class="fa fa-arrow-right"></i> Tea Machinery</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/category/5"><i class="fa fa-arrow-right"></i> Conveyors</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/category/6"><i class="fa fa-arrow-right"></i> Dust Collector</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/category/7"><i class="fa fa-arrow-right"></i> Exhaust Fan</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/category/8"><i class="fa fa-arrow-right"></i> Packers</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/machinery/category/9"><i class="fa fa-arrow-right"></i> Filters</a>
                         </footer>
                     </article>
                     <article class="one_third">
@@ -146,12 +146,12 @@
                             <p>Sodales cursus sapien erat pharetra justo vitae volutpat eros magna et magna praesent at lectus vestibulum ante ipsum primis.</p>
                         </div>
                         <footer class="card-footer">
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/10"><i class="fa fa-arrow-right"></i> Equipment</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/11"><i class="fa fa-arrow-right"></i> Roofing Sheets</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/12"><i class="fa fa-arrow-right"></i> Gates</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/13"><i class="fa fa-arrow-right"></i> Roller Doors</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/14"><i class="fa fa-arrow-right"></i> Hand Railing</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/15""><i class="fa fa-arrow-right"></i> Building</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/category/10"><i class="fa fa-arrow-right"></i> Equipment</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/category/11"><i class="fa fa-arrow-right"></i> Roofing Sheets</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/category/12"><i class="fa fa-arrow-right"></i> Gates</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/category/13"><i class="fa fa-arrow-right"></i> Roller Doors</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/category/14"><i class="fa fa-arrow-right"></i> Hand Railing</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/construction/category/15""><i class="fa fa-arrow-right"></i> Building</a>
                         </footer>
                     </article>
                     <article class="one_third">
@@ -165,8 +165,8 @@
                             <p>Sodales cursus sapien erat pharetra justo vitae volutpat eros magna et magna praesent at lectus vestibulum ante ipsum primis.</p>
                         </div>
                         <footer class="card-footer">
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/other/16"><i class="fa fa-arrow-right"></i> Land</a>
-                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/other/17"><i class="fa fa-arrow-right"></i> Vehicles</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/other/category/16"><i class="fa fa-arrow-right"></i> Land</a>
+                            <a class="btn btn-block inverse btn-card" href="<?php echo base_url(); ?>index.php/other/category/17"><i class="fa fa-arrow-right"></i> Vehicles</a>
                         </footer>
                     </article>
                 </div>

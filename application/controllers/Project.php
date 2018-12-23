@@ -7,8 +7,8 @@ class Project extends MY_Controller {
     public function index() {
         $this->load->model('project_model');
 
-        $data['comprojects'] = $this->project_model->get_complete_project(3);
-        $data['goingprojects'] = $this->project_model->get_going_project(3);
+        $data['comprojects'] = $this->project_model->where(array('Stat'=>1))->get_all();
+        $data['goingprojects'] = $this->project_model->where(array('Stat'=>0))->get_all();
         $data['complete'] = "";
         $data['ongoing'] = "active";
 

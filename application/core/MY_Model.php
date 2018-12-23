@@ -1799,6 +1799,7 @@ class MY_Model extends CI_Model
         $segments = $this->uri->total_segments();
         $uri_array = $this->uri->segment_array();
         $page = $this->uri->segment($segments);
+
         if(is_numeric($page))
         {
             $page_number = $page;

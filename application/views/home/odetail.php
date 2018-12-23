@@ -30,38 +30,38 @@ $this->load->view('layout/header');
                 <nav id="mainav" class="fl_right">
                     <ul class="clear">
                         <li><a href="<?php echo base_url(); ?>index.php/home">Home</a></li>
-                        <li><a class="drop" href="#">Products</a>
+                        <li class="active"><a class="drop" href="#">Products</a>
                             <ul>
-                                <li><a  href="#">Machinery</a>
+                                <li class="active"><a  href="#">Machinery</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/4">Tea Machinery</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/5">Conveyors</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/6">Dust Collector</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/7">Exhaust Fan</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/8">Packers</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/9">Filters</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/4">Tea Machinery</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/5">Conveyors</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/6">Dust Collector</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/7">Exhaust Fan</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/8">Packers</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/9">Filters</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Construction</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/10">Equipment</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/11">Roofing Sheets</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/12">Gates</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/13">Roller Doors</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/14">Hand Railing</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/15">Building</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/10">Equipment</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/11">Roofing Sheets</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/12">Gates</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/13">Roller Doors</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/14">Hand Railing</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/15">Building</a></li>
                                     </ul>
                                 </li>
                                 <li ><a href="#">Other</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/other/16">Land</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/other/17">Vehicles</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/other/category/16">Land</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/other/category/17">Vehicles</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo base_url(); ?>index.php/all">All Products</a></li>
                             </ul>
                         </li>
-                        <li class="active"><a href="<?php echo base_url(); ?>index.php/project">Our Projects</a></li>
+                        <li><a href="<?php echo base_url(); ?>index.php/project">Our Projects</a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/about">About Us</a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/gallery">Gallery</a></li>
                         <li><a href="<?php echo base_url(); ?>index.php/contact">Contact Us</a></li
@@ -69,7 +69,6 @@ $this->load->view('layout/header');
                 </nav>
             </header>
         </div>
-
         <div class="wrapper">
             <section id="breadcrumb" class="hoc clear">
                 <ul>
@@ -82,7 +81,7 @@ $this->load->view('layout/header');
 
     <div class="wrapper row3">
         <section class="hoc container clear"><br>
-            <h6 class="heading center"> PROJECT DETAILS</h6><hr><br>
+            <h6 class="heading center"> PRODUCT DETAILS</h6><hr><br>
             <div class="col-md-3">
                 <h6 class="red"><i class="fa fa-snowflake-o"></i> Machinery</h6>
                 <nav class="sdb_holder">
@@ -117,88 +116,28 @@ $this->load->view('layout/header');
             <div class="col-md-9">
                 <div class="group excerpts">
                     <div class="col-md-12">
-                        <?php if($project['Image1']){ ?>
-                            <div class="col-md-6">
-                                <div class="dimage" >
-                                    <div class="carousel-inner tz-gallery" >
-                                        <div class="item active ">
-                                            <a class="lightbox " href="<?php echo base_url(); ?>projects/<?php echo $project['Image1']; ?>">
-                                            <img class="dimage" src="<?php echo base_url(); ?>projects/<?php echo $project['Image1']?>" alt="<?php echo $project['Name']?>?>" width="100%" height="700">
-                                        </a>
-                                        </div>
-                                    </div><br>
+                        <div class="dimage" >
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active ">
+                                    <img data-toggle="magnify" class="dimage" src="<?php echo base_url(); ?>products/<?php echo $category['Category']?>/<?php echo  $product['Image']?>" alt="<?php echo  $product['Name']?>" width="1200" height="700">
                                 </div>
                             </div>
-                        <?php }
-                        if($project['Image2']){
-                            ?>
-                            <div class="col-md-6">
-                                <div class="dimage" >
-                                    <div class="carousel-inner  tz-gallery" >
-                                        <div class="item active ">
-                                            <a class="lightbox " href="<?php echo base_url(); ?>projects/<?php echo $project['Image2']; ?>">
-                                            <img class="dimage" src="<?php echo base_url(); ?>projects/<?php echo $project['Image2']?>" alt="<?php echo $project['Name']?>?>" width="100%" height="700">
-                                            </a>
-                                        </div>
-                                    </div><br>
-                                </div>
-                            </div>
-                        <?php }
-                        if($project['Image3']){
-                            ?>
-                            <div class="col-md-6">
-                                <div class="dimage" >
-                                    <div class="carousel-inner tz-gallery">
-                                        <div class="item active ">
-                                            <a class="lightbox " href="<?php echo base_url(); ?>projects/<?php echo $project['Image3']; ?>">
-                                            <img class="dimage" src="<?php echo base_url(); ?>projects/<?php echo $project['Image3']?>" alt="<?php echo $project['Name']?>?>" width="100%" height="700">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> <br>
-                            </div>
-                        <?php }
-                        if($project['Image4']){
-                            ?>
-                            <div class="col-md-6">
-                                <div class="dimage" >
-                                    <div class="carousel-inner tz-gallery">
-                                        <div class="item active ">
-                                            <a class="lightbox " href="<?php echo base_url(); ?>projects/<?php echo $project['Image4']; ?>">
-                                            <img class="dimage" src="<?php echo base_url(); ?>projects/<?php echo $project['Image4']?>" alt="<?php echo $project['Name']?>?>" width="100%" height="700">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> <br>
-                            </div>
-                        <?php }
-                        ?>
+                        </div><br>
                         <div class="dcontent">
                             <table class="table table-borderless">
                                 <tbody>
                                 <tr>
-                                    <td width="200"><i class="fa fa-check-circle"></i> Project Name</td>
-                                    <td><?php echo $project['Name']?></td>
+                                    <td width="200"><i class="fa fa-check-circle"></i> Product Name</td>
+                                    <td><?php echo  $product['Name']?></td>
                                 </tr>
                                 <tr>
-                                    <td width="200"><i class="fa fa-check-circle"></i> Start Date</td>
-                                    <td><?php echo $project['Start_Date']?></td>
-                                </tr>
-                                <tr>
-                                    <td width="200"><i class="fa fa-check-circle"></i> End Date</td>
-                                    <td><?php echo $project['End_Date']?></td>
-                                </tr>
-                                <tr>
-                                    <td width="200"><i class="fa fa-check-circle"></i> Status</td>
-                                    <td><?php if($project['Stat']==0 ){
-                                            echo "On Going";
-                                        } else {
-                                            echo "Complete";
-                                        }?></td>
+                                    <td width="200"><i class="fa fa-check-circle"></i> Category</td>
+                                    <td><?php echo $category['Category']?></td>
                                 </tr>
                                 <tr>
                                     <td width="200"><i class="fa fa-check-circle"></i> Description</td>
-                                    <td><?php echo $project['Description']?></td>
+                                    <td><?php echo  $product['Description']?></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -213,17 +152,13 @@ $this->load->view('layout/header');
     <?php
     $this->load->view('layout/footer');
     ?>
-
     <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 </div>
 <script src="<?php echo base_url(); ?>scripts/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>scripts/magnify.js"></script>
 <script src="<?php echo base_url(); ?>scripts/script.js"></script>
 <script src="<?php echo base_url(); ?>scripts/jquery.backtotop.js"></script>
 <script src="<?php echo base_url(); ?>scripts/jarallax.js"></script>
 <script src="<?php echo base_url(); ?>scripts/mscript.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
-</script>
 
 </body>

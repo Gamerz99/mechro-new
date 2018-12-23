@@ -9,6 +9,7 @@ class project_model extends MY_Model {
         $this->table = 'project';
         $this->primary_key = 'id';
         $this->return_as = "array";
+        $this->db->order_by('Id','DESC');
         parent::__construct();
     }
 

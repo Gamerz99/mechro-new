@@ -36,28 +36,28 @@ $this->load->view('layout/header');
                             <ul>
                                 <li><a  href="#">Machinery</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/4">Tea Machinery</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/5">Conveyors</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/6">Dust Collector</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/7">Exhaust Fan</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/8">Packers</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/9">Filters</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/4">Tea Machinery</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/5">Conveyors</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/6">Dust Collector</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/7">Exhaust Fan</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/8">Packers</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/machinery/category/9">Filters</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Construction</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/10">Equipment</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/11">Roofing Sheets</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/12">Gates</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/13">Roller Doors</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/14">Hand Railing</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/15">Building</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/10">Equipment</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/11">Roofing Sheets</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/12">Gates</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/13">Roller Doors</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/14">Hand Railing</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/construction/category/15">Building</a></li>
                                     </ul>
                                 </li>
                                 <li ><a href="#">Other</a>
                                     <ul>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/16">Land</a></li>
-                                        <li><a href="<?php echo base_url(); ?>index.php/construction/17">Vehicles</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/other/category/16">Land</a></li>
+                                        <li><a href="<?php echo base_url(); ?>index.php/other/category/17">Vehicles</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo base_url(); ?>index.php/all">All Products</a></li>
