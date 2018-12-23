@@ -76,19 +76,13 @@
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
-                    <!-- /.col -->
                     <div class="col-xs-4">
                         <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
                     </div>
-                    <!-- /.col -->
                 </div>
                 <?php echo form_close(); ?>
-                <a href="<?php echo base_url(); ?>index.php/user/forgetpassword">Get a new password.</a><br>
             </div>
         </div>
-        <!-- /.login-box -->
-
-        <!-- jQuery 3 -->
         <script src="<?php echo base_url(); ?>layout/bower_components/jquery/dist/jquery.min.js"></script>
         <!-- Bootstrap 3.3.7 -->
         <script src="<?php echo base_url(); ?>layout/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

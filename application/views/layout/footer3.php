@@ -5,9 +5,6 @@
 <script src="<?php echo base_url(); ?>layout/dist/js/adminlte.min.js"></script>
 
 <footer class="main-footer no-print">
-    <div class="pull-right hidden-xs">
-        <b>Version</b> 2.1.0
-    </div>
     <strong>Copyright &copy; 2018     All rights
         reserved.
 </footer>

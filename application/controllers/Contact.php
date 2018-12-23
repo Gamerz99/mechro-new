@@ -37,7 +37,7 @@ class Contact extends MY_Controller {
             $this->load->library('email');
 
             $this->email->from($data['email'], $data['name']);
-            $this->email->to('muneshtharinda560@gmail.com');
+            $this->email->to('mechrocom@gmail.com');
 
             $this->email->subject('Web site');
             $this->email->message($data['comment']);

@@ -49,13 +49,13 @@
                     <ul class="nav navbar-nav">
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="<?php echo base_url(); ?>profile/thumb/<?php echo $userinf['image']?>" class="user-image" alt="User Image">
+                                <img src="<?php echo base_url(); ?>about/director.jpg" class="user-image" alt="User Image">
                                 <span class="hidden-xs"><?php echo $userinf['username']?></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header">
-                                    <img src="<?php echo base_url(); ?>profile/thumb/<?php echo $userinf['image']?>" class="img-circle" alt="User Image">
+                                    <img src="<?php echo base_url(); ?>about/director.jpg" class="img-circle" alt="User Image">
                                     <p>
                                         HYDROMET (PVT) LTD
                                         <small>Since 1998</small>
@@ -76,7 +76,7 @@
             <section class="sidebar">     
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="<?php echo base_url(); ?>profile/thumb/<?php echo $userinf['image']?>" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url(); ?>about/director.jpg" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
                         <p>   <?php echo $userinf['username']; ?> </p>
