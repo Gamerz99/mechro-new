@@ -13,7 +13,16 @@ class User_model extends MY_Model {
     }
 
     function getLoginSession() {
-        return $this->session->userdata('login_data');
+        $this->load->library(array('session'));
+        if($this->session->userdata('login_data'))
+        {
+            $session_data = $this->session->userdata('login_data');
+        }
+        else
+        {
+            redirect('user/sighIn');
+        }
+        return $session_data;
     }
 
 }

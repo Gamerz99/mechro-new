@@ -9,8 +9,8 @@ class Project extends MY_Controller {
 
         $data['comprojects'] = $this->project_model->where(array('Stat'=>1))->get_all();
         $data['goingprojects'] = $this->project_model->where(array('Stat'=>0))->get_all();
-        $data['complete'] = "";
-        $data['ongoing'] = "active";
+        $data['complete'] = "active";
+        $data['ongoing'] = "";
 
         $this->load->view('home/project', $data);
     }

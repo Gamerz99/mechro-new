@@ -35,13 +35,13 @@ $this->load->view('layout/header1', $data);
                 <!-- small box -->
                 <div class="small-box bg-aqua">
                     <div class="inner">
-                        <h3>100</h3>
-                        <p>Daily Sales</p>
+                        <h3><?php echo $pcount?></h3>
+                        <p>Projects</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="<?php echo base_url(); ?>index.php/settings/project" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -49,13 +49,13 @@ $this->load->view('layout/header1', $data);
                 <!-- small box -->
                 <div class="small-box bg-green">
                     <div class="inner">
-                        <h3>53<sup style="font-size: 23px">%</sup></h3>
-                        <p>GRN</p>
+                        <h3><?php echo $mcount?></h3>
+                        <p>Machinery</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="<?php echo base_url(); ?>index.php/settings/machinery" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -63,14 +63,14 @@ $this->load->view('layout/header1', $data);
                 <!-- small box -->
                 <div class="small-box bg-yellow">
                     <div class="inner">
-                        <h3>44</h3>
+                        <h3><?php echo $ccount?></h3>
 
-                        <p>Users</p>
+                        <p>Construction</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="<?php echo base_url(); ?>index.php/settings/construction" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -78,13 +78,13 @@ $this->load->view('layout/header1', $data);
                 <!-- small box -->
                 <div class="small-box bg-red">
                     <div class="inner">
-                        <h3>65</h3>
-                        <p>Reports</p>
+                        <h3><?php echo $ocount?></h3>
+                        <p>Other</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="<?php echo base_url(); ?>index.php/settings/other" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -225,107 +225,6 @@ $this->load->view('layout/header1', $data);
             </section>
         </div>
 
-        <div class="row">
-            <div class="col-md-5">
-                <!-- Info Boxes Style 2 -->
-                <div class="info-box bg-yellow">
-                  <!--span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span-->
-                    <span class="info-box-icon"><img src="<?php echo base_url(); ?>templates/dist/img/store.png" width="75%"></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Store A</span>
-                        <span class="info-box-number">5,200</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 50%"></div>
-                        </div>
-                        <span class="progress-description">
-                            50% Increase in 30 Days
-                        </span>
-                    </div>
-                    <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-                <div class="info-box bg-green">
-                  <!--span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span-->
-                    <span class="info-box-icon"><img src="<?php echo base_url(); ?>templates/dist/img/store.png" width="75%"></span>
-
-                    <div class="info-box-content">
-                        <span class="info-box-text">Store B</span>
-                        <span class="info-box-number">92,050</span>
-
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 20%"></div>
-                        </div>
-                        <span class="progress-description">
-                            20% Increase in 30 Days
-                        </span>
-                    </div>
-                    <!-- /.info-box-content -->
-                </div>
-                <!-- /.info-box -->
-                <div class="info-box bg-red">
-                  <!--span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span-->
-                    <span class="info-box-icon"><img src="<?php echo base_url(); ?>templates/dist/img/store.png" width="75%"></span>
-                    <div class="info-box-content">
-                        <span class="info-box-text">Store C</span>
-                        <span class="info-box-number">114,381</span>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 70%"></div>
-                        </div>
-                        <span class="progress-description">
-                            70% Increase in 30 Days
-                        </span>
-                    </div>
-                    <!-- /.info-box-content -->
-                </div>
-                <!-- /.box -->
-            </div>
-
-            <section class="col-lg-7 connectedSortable">
-                <!-- solid sales graph -->
-                <div class="box box-solid bg-teal-gradient">
-                    <div class="box-header">
-                        <i class="fa fa-th"></i>
-                        <h3 class="box-title">Sales Graph</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn bg-teal btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn bg-teal btn-sm" data-widget="remove"><i class="fa fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="box-body border-radius-none">
-                        <div class="chart" id="line-chart" style="height: 250px;"></div>
-                    </div>
-                    <!-- /.box-body -->
-                    <div class="box-footer no-border">
-                        <div class="row">
-                            <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                                <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60"
-                                       data-fgColor="#39CCCC">
-                                <div class="knob-label">Mail-Orders</div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                                <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60"
-                                       data-fgColor="#39CCCC">
-                                <div class="knob-label">Online</div>
-                            </div>
-                            <!-- ./col -->
-                            <div class="col-xs-4 text-center">
-                                <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60"
-                                       data-fgColor="#39CCCC">
-                                <div class="knob-label">In-Store</div>
-                            </div>
-                            <!-- ./col -->
-                        </div>
-                        <!-- /.row -->
-                    </div>
-                    <!-- /.box-footer -->
-                </div>
-            </section>
-        </div>
     </section>
     <!-- /.content -->
 </div>

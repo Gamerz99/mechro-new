@@ -80,9 +80,8 @@ class Migration_Create_user extends CI_Migration {
         $this->dbforge->create_table('user');
 
         $data = array(
-            array('contactName' => 'Admin','email' => 'acqua@gmail.com','password' => 'admin','type' => 1)
+            array('contactName' => 'Admin','email' => 'admin@gmail.com','password' => 'admin','type' => 1)
         );
-        //$this->db->insert('user_group', $data); I tried both
         $this->db->insert_batch('user', $data);
     }
 

@@ -13,8 +13,6 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>layout/dist/css/skins/_all-skins.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>layout/bower_components/morris.js/morris.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>layout/bower_components/jvectormap/jquery-jvectormap.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>layout/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>layout/bower_components/bootstrap-daterangepicker/daterangepicker.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>layout/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>layout/datatables/datatables.css"/>
 

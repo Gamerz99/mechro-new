@@ -23,9 +23,9 @@
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         <header class="main-header">          
-            <a href="<?php echo base_url(); ?>" class="logo">      
-                <span class="logo-mini">Hydro</span>
-                <span class="logo-lg"> <img class="logo-top" src="<?php echo base_url(); ?>templates/dist/img/aqua.png" /></span>
+            <a href="<?php echo base_url(); ?>" class="logo">
+                <span class="logo-mini">Mech</span>
+                <h1>MECH-RO</h1>
             </a>
             <nav class="navbar navbar-static-top">
                 <?php if (isset($msg)) { ?>

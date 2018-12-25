@@ -82,8 +82,8 @@ $this->load->view('layout/header');
     <div class="wrapper row3">
         <section class="hoc container clear"><br>
             <ul class="nav nav-tabs">
-                <li class="<?php echo $ongoing ?>"><a data-toggle="tab" href="#on_going">ON GOING PROJECTS</a></li>
                 <li class="<?php echo $complete ?>"><a data-toggle="tab" href="#complete">COMPLETED PROJECTS</a></li>
+                <li class="<?php echo $ongoing ?>"><a data-toggle="tab" href="#on_going">ON GOING PROJECTS</a></li>
             </ul>
             <div class="tab-content">
                 <div id="on_going" class="tab-pane fade in <?php echo $ongoing ?>"><br>

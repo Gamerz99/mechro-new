@@ -63,17 +63,13 @@ class Migration_Create_mainmenu extends CI_Migration {
 
         $data = array(
             array('title' => 'Home','url' => 'index.php/admin','position' => 0,'target' => 0,'parent_id' => 0,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-home'),
-            array('title' => 'Setting','url' => 'index.php/settings','position' => 15,'target' => 2,'parent_id' => 0,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-cogs'),
-            array('title' => 'Category','url' => 'settings/category','position' => 0,'target' => 2,'parent_id' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa  fa-podcast'),
-            array('title' => 'Sub Category','url' => 'settings/subcategory','position' => 1,'target' => 2,'parent_id' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-dot-circle-o'),
-            array('title' => 'Unit','url' => 'settings/unit','position' => 2,'parent_id' => 2,'target' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-pencil-square-o'),
-            array('title' => 'Item','url' => 'settings/item','position' => 3,'parent_id' => 2,'target' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-shopping-basket'),
-            array('title' => 'Location','url' => 'settings/location','position' => 4,'target' => 2,'parent_id' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-map-marker'),
-            array('title' => 'Sub Location','url' => 'settings/sublocation','position' => 5,'target' => 2,'parent_id' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-map-pin'),
-            array('title' => 'Store','url' => 'settings/store','position' => 6,'target' => 2,'parent_id' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-institution'),
-            array('title' => 'Supplier','url' => 'settings/supplier','position' => 7,'target' => 2,'parent_id' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-group')
+            array('title' => 'Product','url' => 'index.php/admin','position' => 1,'target' => 2,'parent_id' => 0,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-cart-plus'),
+            array('title' => 'Machinery','url' => 'settings/machinery','position' => 0,'target' => 2,'parent_id' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-cogs'),
+            array('title' => 'Construction','url' => 'settings/construction','position' => 1,'target' => 2,'parent_id' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-exclamation-triangle'),
+            array('title' => 'Other','url' => 'settings/other','position' => 2,'parent_id' => 2,'target' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-flag'),
+            array('title' => 'Project','url' => 'index.php/settings/project','position' => 2,'parent_id' => 0,'target' => 2,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-folder'),
+            array('title' => 'Gallery','url' => 'index.php/settings/gallery','position' => 3,'target' => 2,'parent_id' => 0,'show_menu' => 1,'type' => 1,'icon' => 'fa fa-photo'),
         );
-        //$this->db->insert('user_group', $data); I tried both
         $this->db->insert_batch('mainmenu', $data);
     }
 
